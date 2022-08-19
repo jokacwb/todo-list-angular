@@ -36,7 +36,7 @@ export class TodoListComponent implements DoCheck {
   public validationInput(event: string, index: number) {
 
     if (!event.length) {
-      const confirm = window.confirm("Task está sem vazia, deseja deletar?");
+      const confirm = window.confirm("Task está vazia, deseja deletar?");
 
       if (confirm) {
         this.deleteItemTaskList(index);
